@@ -94,7 +94,7 @@ const translations = {
     contact: {
       label: "Contact",
       heading: "Let’s build something intentional.",
-      email: "hello@natiarios.design",
+      email: "nata9532@icloud.com",
       linkedin: "LinkedIn ↗",
       dribbble: "Dribbble ↗",
       readcv: "Read.cv ↗",
@@ -107,7 +107,7 @@ const translations = {
     nav: { craft: "Proyectos", lab: "Laboratorio", about: "Perfil", contact: "Contacto" },
     header: { talk: "Hablemos", cv: "Descargar CV" },
     hero: {
-      role: "Diseñadora UX/UI · Front-end",
+      role: "Diseñadora UX/UI · Front-end Dev",
       name: "Natalia Rios",
       side: "Simplifico, humanizo.",
       more: "Conoce más →",

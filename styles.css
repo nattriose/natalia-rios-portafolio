@@ -183,6 +183,7 @@ main {
   align-items: center;
   min-height: 420px;
   isolation: isolate;
+  width: 100%;
 }
 
 .hero-center::after {
