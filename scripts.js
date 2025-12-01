@@ -30,11 +30,10 @@ const translations = {
     },
     craft: { label: "Craft" },
     projects: {
-      serenify: {
-        title: "Care that listens first.",
+      caja: {
+        title: "Seamless Banking Experiences",
         body:
-          "Built a mental wellness platform for Latin American teens with inclusive UX, smart journaling flows, and a supportive visual language.",
-        cta: "View Case Study",
+          "Designed an intuitive banking app that simplifies transfers, transaction tracking, and secure authentication. Combined clean interfaces, micro-interactions, and facial recognition to help users complete their operations quickly and reliably.",
       },
       faro: {
         title: "Legal research, reimagined.",
@@ -59,7 +58,7 @@ const translations = {
       label: "Lab",
       heading: "Prototyping ideas that bend the rules.",
       body:
-        "Weekly explorations blending tangible UI, playful motion, and tiny AI helpers. These experiments keep my craft curious and my code fresh.",
+        "A space for quick ideas and small explorations where I combine interface design, motion, and front-end prototyping. It’s also where I document how AI tools—like Figma Make and Cursor—help me accelerate workflows, automate design-system-based patterns, and explore new UI variations faster than manual design alone. This is where I keep lightweight proof-of-concepts that keep my craft sharp and my curiosity active.",
       cards: {
         orb: {
           label: "Shader Toy",
@@ -80,13 +79,13 @@ const translations = {
     },
     about: {
       label: "About",
-      heading: "I simplify interfaces and humanize systems.",
+      heading: "Designing with Purpose, Building with Code",
       body:
-        "Raised between Bogotá and Buenos Aires, I bridge research, brand, UX, and front-end implementation. I’ve shipped products for health, fintech, and creative tech teams from seed through Series C.",
+        "I design interfaces that are intuitive, human-centered, and a little bold. UX/UI Designer and Computer Engineer from Lima, passionate about crafting products that balance creativity and usability.",
       list: {
-        one: "8+ years blending UX, systems thinking, and clean front-end.",
-        two: "Certified Design Sprint facilitator & accessibility advocate.",
-        three: "Comfortable shipping in Figma, Webflow, React/Next.js.",
+        one: "4+ years of experience building products across health, fintech, and creative tech.",
+        two: "CSkilled in Figma, design systems, rapid prototyping, and front-end collaboration.",
+        three: "Experience balancing disruptive concepts with precise, brand-aligned execution.",
       },
       cta: "Book a call",
       cv: "Download CV",
@@ -118,11 +117,10 @@ const translations = {
     },
     craft: { label: "Proyectos" },
     projects: {
-      serenify: {
-        title: "Cuidado que escucha primero.",
+      caja: {
+        title: "Experiencias Bancarias Sin Fricción",
         body:
-          "Diseñé una plataforma de bienestar mental para adolescentes latinoamericanos con UX inclusiva, diarios inteligentes y un lenguaje visual contenedor.",
-        cta: "Ver caso",
+          "Diseñé una app bancaria intuitiva que facilita transferencias, consulta de movimientos y autenticación segura. Combiné interfaces limpias, micro-interacciones y reconocimiento facial para que los usuarios realicen sus operaciones de manera rápida y confiable.",
       },
       faro: {
         title: "Investigación legal reinventada.",
@@ -147,7 +145,7 @@ const translations = {
       label: "Laboratorio",
       heading: "Prototipo ideas que rompen las reglas.",
       body:
-        "Exploraciones semanales que mezclan UI tangible, motion lúdico y micro asistentes de IA. Mantienen mi criterio curioso y mi código fresco.",
+        "Un espacio para ideas rápidas y pequeñas exploraciones donde combino diseño de interfaces, motion y prototipado front-end. También es donde documento cómo herramientas de IA —como Figma Make y Cursor— me ayudan a acelerar flujos, automatizar patrones basados en design systems y explorar nuevas variantes de UI más rápido de lo posible solo con diseño manual. Aquí guardo pruebas de concepto que mantienen mi criterio fresco y mi curiosidad activa.",
       cards: {
         orb: {
           label: "Shader Toy",
@@ -168,13 +166,13 @@ const translations = {
     },
     about: {
       label: "Perfil",
-      heading: "Simplifico interfaces y humanizo sistemas.",
+      heading: "Diseñando con propósito, construyendo con código",
       body:
-        "Criada entre Bogotá y Buenos Aires, conecto research, marca, UX y front-end. He lanzado productos de salud, fintech y creatividad desde seed hasta Serie C.",
+        "Diseño interfaces intuitivas, centradas en las personas y con un toque audaz. Soy UX/UI Designer e Ingeniera Informática de Lima, apasionada por crear productos que equilibran creatividad y usabilidad.",
       list: {
-        one: "Más de 8 años mezclando UX, pensamiento sistémico y front-end.",
-        two: "Facilitadora certificada de Design Sprint y promotora de accesibilidad.",
-        three: "Experta entregando en Figma, Webflow, React/Next.js.",
+        one: "4+ años de experiencia desarrollando productos en salud, fintech y tecnología creativa.",
+        two: "Experta en Figma, sistemas de diseño, prototipado rápido y colaboración con equipos de front-end.",
+        three: "Experiencia equilibrando conceptos disruptivos con una ejecución precisa y alineada a la marca.",
       },
       cta: "Agenda una llamada",
       cv: "Descargar CV",
