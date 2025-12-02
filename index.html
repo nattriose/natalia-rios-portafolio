@@ -1,386 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Natalia Rios — UX/UI + Front-end</title>
-    <meta
-      name="description"
-      content="Portfolio website for Natalia Rios, UX/UI designer and front-end developer."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="logo">NR</div>
-      <nav class="primary-nav">
-        <a href="#craft" data-i18n="nav.craft">Craft</a>
-        <a href="#lab" data-i18n="nav.lab">Lab</a>
-        <a href="#about" data-i18n="nav.about">About</a>
-        <a href="#contact" data-i18n="nav.contact">Contact</a>
-        <a id="cv-link"
-        href="assets/Natalia-Rios-CV-EN.pdf"
-        download
-        data-i18n="header.cv" href="#cv" data-i18n="nav.contact">CV</a>
-      </nav>
-      <div class="header-actions">
-        <div class="language-toggle" role="group" aria-label="Language toggle">
-          <button class="lang-btn is-active" data-lang="en" aria-pressed="true">
-            EN
-          </button>
-          <button class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
-        </div>
-        
-        
-      </div>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Natalia Rios — UX/UI + Front-end</title>
+		<meta
+			name="description"
+			content="Portfolio website for Natalia Rios, UX/UI designer and front-end developer." />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="logo">NR</div>
+			<nav class="primary-nav">
+				<a href="#craft" data-i18n="nav.craft">Craft</a>
+				<a href="#lab" data-i18n="nav.lab">Lab</a>
+				<a href="#about" data-i18n="nav.about">About</a>
+				<a href="#contact" data-i18n="nav.contact">Contact</a>
+				<a
+					id="cv-link"
+					href="assets/Natalia-Rios-CV-EN.pdf"
+					download
+					data-i18n="header.cv"
+					href="#cv"
+					data-i18n="nav.contact"
+					>CV</a
+				>
+			</nav>
+			<div class="header-actions">
+				<div class="language-toggle" role="group" aria-label="Language toggle">
+					<button class="lang-btn is-active" data-lang="en" aria-pressed="true">
+						EN
+					</button>
+					<button class="lang-btn" data-lang="es" aria-pressed="false">
+						ES
+					</button>
+				</div>
+			</div>
+		</header>
 
-    <main>
-      <section class="hero hero-spotlight">
-        <div class="hero-center">
-          <span class="hero-role" data-i18n="hero.role"
-            >Interface Designer · Front-end Dev</span
-          >
-          <div class="hero-blob-shell" aria-hidden="true">
-            <svg class="blob-svg" viewBox="0 0 600 600" role="presentation">
-              <defs>
-                <radialGradient id="blobGradient" cx="42%" cy="28%" r="72%">
-                  <stop offset="0%" stop-color="#ffffff" stop-opacity="0.98" />
-                  <stop offset="40%" stop-color="#fafafa" stop-opacity="0.85" />
-                  <stop offset="65%" stop-color="#e7e7e7" stop-opacity="0.7" />
-                  <stop offset="100%" stop-color="#cfcfcf" stop-opacity="0.92" />
-                </radialGradient>
-                <linearGradient id="blobSheen" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
-                  <stop offset="35%" stop-color="#ffffff" stop-opacity="0.35" />
-                  <stop offset="70%" stop-color="#c9c9c9" stop-opacity="0.2" />
-                  <stop offset="100%" stop-color="#fefefe" stop-opacity="0.6" />
-                </linearGradient>
-                <filter id="blobGlass" x="-20%" y="-20%" width="140%" height="140%">
-                  <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
-                  <feBlend in="SourceGraphic" in2="blur" mode="screen" />
-                </filter>
-              </defs>
-              <path
-                id="blob-path"
-                fill="url(#blobGradient)"
-                stroke="url(#blobSheen)"
-                stroke-linejoin="round"
-                stroke-linecap="round"
-                filter="url(#blobGlass)"
-              ></path>
-            </svg>
-            <div class="blob-highlight"></div>
-          </div>
-          <h1 data-i18n="hero.name">Natalia Rios</h1>
-        </div>
-        
-      </section>
+		<main>
+			<section class="hero hero-spotlight">
+				<div class="hero-center">
+					<span class="hero-role" data-i18n="hero.role"
+						>Interface Designer · Front-end Dev</span
+					>
+					<div class="hero-blob-shell" aria-hidden="true">
+						<svg class="blob-svg" viewBox="0 0 600 600" role="presentation">
+							<defs>
+								<radialGradient id="blobGradient" cx="42%" cy="28%" r="72%">
+									<stop offset="0%" stop-color="#ffffff" stop-opacity="0.98" />
+									<stop offset="40%" stop-color="#fafafa" stop-opacity="0.85" />
+									<stop offset="65%" stop-color="#e7e7e7" stop-opacity="0.7" />
+									<stop
+										offset="100%"
+										stop-color="#cfcfcf"
+										stop-opacity="0.92" />
+								</radialGradient>
 
-      <section class="hero-intro">
-        <p class="lead" data-i18n="hero.lead">
-          I help purposeful teams ship delightful products that feel human,
-          honest, and confident—spanning research, UX strategy, visual systems,
-          and clean code.
-        </p>
-        <div class="hero-cta">
-          <button class="primary-btn" data-scroll="#craft" data-i18n="hero.ctaPrimary">
-            See Work
-          </button>
-          <button
-            class="secondary-btn"
-            data-scroll="#about"
-            data-i18n="hero.ctaSecondary"
-          >
-            About me
-          </button>
-        </div>
-      </section>
+								<filter
+									id="blobGlass"
+									x="-20%"
+									y="-20%"
+									width="140%"
+									height="140%">
+									<feGaussianBlur
+										in="SourceGraphic"
+										stdDeviation="6"
+										result="blur" />
+									<feBlend in="SourceGraphic" in2="blur" mode="screen" />
+								</filter>
+							</defs>
 
-      <section id="craft" class="section">
-        <div class="section-heading">
-          <div class="divider"></div>
-          <p data-i18n="craft.label">Craft</p>
-        </div>
+							<path
+								id="blob-path"
+								fill="url(#blobGradient)"
+								filter="url(#blobGlass)"></path>
+						</svg>
 
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-meta">
-              <p class="client">Caja Trujillo</p>
-              <h2 data-i18n="projects.caja.title">Seamless Banking Experiences</h2>
-              <p data-i18n="projects.caja.body">
-                Designed an intuitive banking app that simplifies transfers, transaction tracking, and secure authentication. Combined clean interfaces, micro-interactions, and facial recognition to help users complete their operations quickly and reliably.
-              </p>
-              <div class="pills">
-                <span>UX Strategy</span>
-                <span>Product Design</span>
-              </div>
-                
-            </div>
-            <figure class="project-media">
-              <img src="./assets/caja-trujillo.jpg" alt="Serenify mobile mockups" />
-            </figure>
-          </article>
+						<div class="blob-highlight"></div>
+					</div>
 
-          <article class="project-card">
-            <div class="project-meta">
-              <p class="client">Kinsey's Pharmacy</p>
-              <h2 data-i18n="projects.faro.title">Legal research, reimagined.</h2>
-              <p data-i18n="projects.faro.body">
-                Designed intelligent workspaces for hybrid legal teams, reducing
-                routine workflows from hours to minutes with explainable AI.
-              </p>
-              <div class="pills">
-                <span>B2B SaaS</span>
-                <span>Design Systems</span>
-                <span>LLM UX</span>
-              </div>
-              
-            </div>
-            <figure class="project-media">
-              <img src="./assets/kinseys-pharmacy.jpg" alt="Legal platform dashboard" />
-            </figure>
-          </article>
+					<h1 data-i18n="hero.name">Natalia Rios</h1>
+				</div>
+			</section>
 
-          <article class="project-card">
-            <div class="project-meta">
-              <p class="client">Lawrence Drug</p>
-              <h2 data-i18n="projects.joyful.title">Fintech with empathy.</h2>
-              <p data-i18n="projects.joyful.body">
-                Crafted an omni-channel client portal for boutique agencies to
-                run invoicing, compliance, and client rituals from one place.
-              </p>
-              <div class="pills">
-                <span>Brand Systems</span>
-                <span>UX Writing</span>
-                <span>Next.js</span>
-              </div>
-             
-            </div>
-            <figure class="project-media">
-              <img src="./assets/lawrence-drug.jpg" alt="Client portal UI" />
-            </figure>
-          </article>
+			<section class="hero-intro">
+				<p class="lead" data-i18n="hero.lead">
+					I help purposeful teams ship delightful products that feel human,
+					honest, and confident—spanning research, UX strategy, visual systems,
+					and clean code.
+				</p>
+				<div class="hero-cta">
+					<button
+						class="primary-btn"
+						data-scroll="#craft"
+						data-i18n="hero.ctaPrimary">
+						See Work
+					</button>
+					<button
+						class="secondary-btn"
+						data-scroll="#about"
+						data-i18n="hero.ctaSecondary">
+						About me
+					</button>
+				</div>
+			</section>
 
-          <article class="project-card">
-            <div class="project-meta">
-              <p class="client">TKS Pharmacy</p>
-              <h2 data-i18n="projects.lumen.title">Habit loops for real life.</h2>
-              <p data-i18n="projects.lumen.body">
-                Led research-to-launch for a micro-coaching app turning therapy
-                insights into playful weekly missions, complete with accessibility
-                guardrails.
-              </p>
-              <div class="pills">
-                <span>User Research</span>
-                <span>Motion</span>
-                <span>Prototyping</span>
-              </div>
-              
-            </div>
-            <figure class="project-media">
-              <img src="./assets/tks-pharmacy.jpg" alt="Habit app screenshots" />
-            </figure>
-          </article>
+			<section id="craft" class="section">
+				<div class="section-heading">
+					<div class="divider"></div>
+					<p data-i18n="craft.label">Craft</p>
+				</div>
 
-          
-          <article class="project-card">
-            <div class="project-meta">
-              <p class="client">Unity Pharmacy</p>
-              <h2 data-i18n="projects.lumen.title">Habit loops for real life.</h2>
-              <p data-i18n="projects.lumen.body">
-                Led research-to-launch for a micro-coaching app turning therapy
-                insights into playful weekly missions, complete with accessibility
-                guardrails.
-              </p>
-              <div class="pills">
-                <span>User Research</span>
-                <span>Motion</span>
-                <span>Prototyping</span>
-              </div>
-              
-            </div>
-            <figure class="project-media">
-              <img src="./assets/unity-pharmacy.jpg" alt="Habit app screenshots" />
-            </figure>
-          </article>
-          <article class="project-card">
-            <div class="project-meta">
-              <p class="client">First City Drugs</p>
-              <h2 data-i18n="projects.lumen.title">Habit loops for real life.</h2>
-              <p data-i18n="projects.lumen.body">
-                Led research-to-launch for a micro-coaching app turning therapy
-                insights into playful weekly missions, complete with accessibility
-                guardrails.
-              </p>
-              <div class="pills">
-                <span>User Research</span>
-                <span>Motion</span>
-                <span>Prototyping</span>
-              </div>
-              
-            </div>
-            <figure class="project-media">
-              <img src="./assets/first-city-drugs.jpg" alt="Habit app screenshots" />
-            </figure>
-          </article>
-          <article class="project-card">
-            <div class="project-meta">
-              <p class="client">Rx Mart Pharmacy</p>
-              <h2 data-i18n="projects.lumen.title">Habit loops for real life.</h2>
-              <p data-i18n="projects.lumen.body">
-                Led research-to-launch for a micro-coaching app turning therapy
-                insights into playful weekly missions, complete with accessibility
-                guardrails.
-              </p>
-              <div class="pills">
-                <span>User Research</span>
-                <span>Motion</span>
-                <span>Prototyping</span>
-              </div>
-             
-            </div>
-            <figure class="project-media">
-              <img src="./assets/rxmart-pharmacy.jpg" alt="Habit app screenshots" />
-            </figure>
-          </article>
-          <article class="project-card">
-            <div class="project-meta">
-              <p class="client">McGlynn Pharmacy</p>
-              <h2 data-i18n="projects.lumen.title">Habit loops for real life.</h2>
-              <p data-i18n="projects.lumen.body">
-                Led research-to-launch for a micro-coaching app turning therapy
-                insights into playful weekly missions, complete with accessibility
-                guardrails.
-              </p>
-              <div class="pills">
-                <span>User Research</span>
-                <span>Motion</span>
-                <span>Prototyping</span>
-              </div>
-              
-            </div>
-            <figure class="project-media">
-              <img src="./assets/mcclynn-pharmacy.jpg" alt="Habit app screenshots" />
-            </figure>
-          </article>
-          <article class="project-card">
-            <div class="project-meta">
-              <p class="client">Spotswood Pharmacy</p>
-              <h2 data-i18n="projects.lumen.title">Habit loops for real life.</h2>
-              <p data-i18n="projects.lumen.body">
-                Led research-to-launch for a micro-coaching app turning therapy
-                insights into playful weekly missions, complete with accessibility
-                guardrails.
-              </p>
-              <div class="pills">
-                <span>User Research</span>
-                <span>Motion</span>
-                <span>Prototyping</span>
-              </div>
-              
-            </div>
-            <figure class="project-media">
-              <img src="./assets/spotswood-pharmacy.jpg" alt="Habit app screenshots" />
-            </figure>
-          </article>
-          
-        </div>
-      </section>
+				<div class="project-grid">
+					<article class="project-card">
+						<div class="project-meta">
+							<p class="client">Caja Trujillo</p>
+							<h2 data-i18n="projects.caja.title">
+								Seamless Banking Experiences
+							</h2>
+							<p data-i18n="projects.caja.body">
+								Designed an intuitive banking app that simplifies transfers,
+								transaction tracking, and secure authentication. Combined clean
+								interfaces, micro-interactions, and facial recognition to help
+								users complete their operations quickly and reliably.
+							</p>
+							<div class="pills">
+								<span>UX Strategy</span>
+								<span>Product Design</span>
+							</div>
+						</div>
+						<figure class="project-media">
+							<img
+								src="./assets/caja-trujillo.jpg"
+								alt="Serenify mobile mockups" />
+						</figure>
+					</article>
 
-      <section id="lab" class="section lab">
-        <div>
-          <p class="eyebrow" data-i18n="lab.label">Lab</p>
-          <h2 data-i18n="lab.heading">Prototyping ideas that bend the rules.</h2>
-          <p data-i18n="lab.body">
-            Weekly explorations blending tangible UI, playful motion, and tiny AI
-            helpers. These experiments keep my craft curious and my code fresh.
-          </p>
-        </div>
-        <div class="lab-grid">
-          <div class="lab-card">
-            <p class="eyebrow" data-i18n="lab.cards.orb.label">Shader Toy</p>
-            <h3 data-i18n="lab.cards.orb.title">Soft Plastic Orb</h3>
-            <p data-i18n="lab.cards.orb.body">
-              GLSL experiment using signed distance fields for velvet-like light.
-            </p>
-          </div>
-          <div class="lab-card">
-            <p class="eyebrow" data-i18n="lab.cards.genie.label">Micro SaaS</p>
-            <h3 data-i18n="lab.cards.genie.title">Outline Genie</h3>
-            <p data-i18n="lab.cards.genie.body">
-              Auto-storyboarding plugin for Figma using structured prompts.
-            </p>
-          </div>
-          <div class="lab-card">
-            <p class="eyebrow" data-i18n="lab.cards.motion.label">Workshop</p>
-            <h3 data-i18n="lab.cards.motion.title">Accessible Motions</h3>
-            <p data-i18n="lab.cards.motion.body">
-              Guidelines + figma kit for building calm micro-interactions.
-            </p>
-          </div>
-        </div>
-      </section>
+					<article class="project-card">
+						<div class="project-meta">
+							<p class="client">Kinsey's Pharmacy</p>
+							<h2 data-i18n="projects.faro.title">
+								Legal research, reimagined.
+							</h2>
+							<p data-i18n="projects.faro.body">
+								Designed intelligent workspaces for hybrid legal teams, reducing
+								routine workflows from hours to minutes with explainable AI.
+							</p>
+							<div class="pills">
+								<span>B2B SaaS</span>
+								<span>Design Systems</span>
+								<span>LLM UX</span>
+							</div>
+						</div>
+						<figure class="project-media">
+							<img
+								src="./assets/kinseys-pharmacy.jpg"
+								alt="Legal platform dashboard" />
+						</figure>
+					</article>
 
-      <section id="about" class="section about">
-        <div class="about-image" aria-hidden="true">
-          
-        </div>
-        <div class="about-copy">
-          <p class="eyebrow" data-i18n="about.label">About</p>
-          <h2 data-i18n="about.heading">I simplify interfaces and humanize systems.</h2>
-          <p data-i18n="about.body">
-            I design interfaces that are intuitive, human-centered, and a little bold.
-UX/UI Designer and Computer Engineer from Lima, passionate about crafting products that balance creativity and usability.
-          </p>
-          <ul>
-            <li data-i18n="about.list.one">
-              8+ years blending UX, systems thinking, and clean front-end.
-            </li>
-            <li data-i18n="about.list.two">
-              Certified Design Sprint facilitator & accessibility advocate.
-            </li>
-            <li data-i18n="about.list.three">
-              Comfortable shipping in Figma, Webflow, React/Next.js.
-            </li>
-          </ul>
-          
-           
-            
-          
-        </div>
-      </section>
+					<article class="project-card">
+						<div class="project-meta">
+							<p class="client">Lawrence Drug</p>
+							<h2 data-i18n="projects.joyful.title">Fintech with empathy.</h2>
+							<p data-i18n="projects.joyful.body">
+								Crafted an omni-channel client portal for boutique agencies to
+								run invoicing, compliance, and client rituals from one place.
+							</p>
+							<div class="pills">
+								<span>Brand Systems</span>
+								<span>UX Writing</span>
+								<span>Next.js</span>
+							</div>
+						</div>
+						<figure class="project-media">
+							<img src="./assets/lawrence-drug.jpg" alt="Client portal UI" />
+						</figure>
+					</article>
 
-      <section id="contact" class="section contact">
-        <div>
-          <p class="eyebrow" data-i18n="contact.label">Contact</p>
-          <h2 data-i18n="contact.heading">Let’s build something intentional.</h2>
-        </div>
-        <div class="contact-actions">
-          <a href="mailto:nata9532@icloud.com" class="primary-btn" data-i18n="contact.email">
-           nata9532@icloud.com
-          </a>
-          <div class="links">
-            <a href="https://www.linkedin.com/in/natalia-rios-elias-283267221/" aria-label="LinkedIn" data-i18n="contact.linkedin">LinkedIn ↗</a>
-            <a href="https://dribbble.com/nattriose" aria-label="Dribbble" data-i18n="contact.dribbble">Dribbble ↗</a>
-            
-          </div>
-        </div>
-      </section>
-    </main>
+					<article class="project-card">
+						<div class="project-meta">
+							<p class="client">TKS Pharmacy</p>
+							<h2 data-i18n="projects.lumen.title">
+								Habit loops for real life.
+							</h2>
+							<p data-i18n="projects.lumen.body">
+								Led research-to-launch for a micro-coaching app turning therapy
+								insights into playful weekly missions, complete with
+								accessibility guardrails.
+							</p>
+							<div class="pills">
+								<span>User Research</span>
+								<span>Motion</span>
+								<span>Prototyping</span>
+							</div>
+						</div>
+						<figure class="project-media">
+							<img
+								src="./assets/tks-pharmacy.jpg"
+								alt="Habit app screenshots" />
+						</figure>
+					</article>
 
-    <footer class="site-footer">
-      <span>© <span id="year"></span> Natalia Rios.</span>
-      <span data-i18n="footer.tagline">Built with love, caffeine, and semantic HTML.</span>
-    </footer>
+					<article class="project-card">
+						<div class="project-meta">
+							<p class="client">Unity Pharmacy</p>
+							<h2 data-i18n="projects.lumen.title">
+								Habit loops for real life.
+							</h2>
+							<p data-i18n="projects.lumen.body">
+								Led research-to-launch for a micro-coaching app turning therapy
+								insights into playful weekly missions, complete with
+								accessibility guardrails.
+							</p>
+							<div class="pills">
+								<span>User Research</span>
+								<span>Motion</span>
+								<span>Prototyping</span>
+							</div>
+						</div>
+						<figure class="project-media">
+							<img
+								src="./assets/unity-pharmacy.jpg"
+								alt="Habit app screenshots" />
+						</figure>
+					</article>
+					<article class="project-card">
+						<div class="project-meta">
+							<p class="client">First City Drugs</p>
+							<h2 data-i18n="projects.lumen.title">
+								Habit loops for real life.
+							</h2>
+							<p data-i18n="projects.lumen.body">
+								Led research-to-launch for a micro-coaching app turning therapy
+								insights into playful weekly missions, complete with
+								accessibility guardrails.
+							</p>
+							<div class="pills">
+								<span>User Research</span>
+								<span>Motion</span>
+								<span>Prototyping</span>
+							</div>
+						</div>
+						<figure class="project-media">
+							<img
+								src="./assets/first-city-drugs.jpg"
+								alt="Habit app screenshots" />
+						</figure>
+					</article>
+					<article class="project-card">
+						<div class="project-meta">
+							<p class="client">Rx Mart Pharmacy</p>
+							<h2 data-i18n="projects.lumen.title">
+								Habit loops for real life.
+							</h2>
+							<p data-i18n="projects.lumen.body">
+								Led research-to-launch for a micro-coaching app turning therapy
+								insights into playful weekly missions, complete with
+								accessibility guardrails.
+							</p>
+							<div class="pills">
+								<span>User Research</span>
+								<span>Motion</span>
+								<span>Prototyping</span>
+							</div>
+						</div>
+						<figure class="project-media">
+							<img
+								src="./assets/rxmart-pharmacy.jpg"
+								alt="Habit app screenshots" />
+						</figure>
+					</article>
+					<article class="project-card">
+						<div class="project-meta">
+							<p class="client">McGlynn Pharmacy</p>
+							<h2 data-i18n="projects.lumen.title">
+								Habit loops for real life.
+							</h2>
+							<p data-i18n="projects.lumen.body">
+								Led research-to-launch for a micro-coaching app turning therapy
+								insights into playful weekly missions, complete with
+								accessibility guardrails.
+							</p>
+							<div class="pills">
+								<span>User Research</span>
+								<span>Motion</span>
+								<span>Prototyping</span>
+							</div>
+						</div>
+						<figure class="project-media">
+							<img
+								src="./assets/mcclynn-pharmacy.jpg"
+								alt="Habit app screenshots" />
+						</figure>
+					</article>
+					<article class="project-card">
+						<div class="project-meta">
+							<p class="client">Spotswood Pharmacy</p>
+							<h2 data-i18n="projects.lumen.title">
+								Habit loops for real life.
+							</h2>
+							<p data-i18n="projects.lumen.body">
+								Led research-to-launch for a micro-coaching app turning therapy
+								insights into playful weekly missions, complete with
+								accessibility guardrails.
+							</p>
+							<div class="pills">
+								<span>User Research</span>
+								<span>Motion</span>
+								<span>Prototyping</span>
+							</div>
+						</div>
+						<figure class="project-media">
+							<img
+								src="./assets/spotswood-pharmacy.jpg"
+								alt="Habit app screenshots" />
+						</figure>
+					</article>
+				</div>
+			</section>
 
-    <script src="scripts.js" defer></script>
-  </body>
+			<section id="lab" class="section lab">
+				<div>
+					<p class="eyebrow" data-i18n="lab.label">Lab</p>
+					<h2 data-i18n="lab.heading">
+						Prototyping ideas that bend the rules.
+					</h2>
+					<p data-i18n="lab.body">
+						Weekly explorations blending tangible UI, playful motion, and tiny
+						AI helpers. These experiments keep my craft curious and my code
+						fresh.
+					</p>
+				</div>
+				<div class="lab-grid">
+					<div class="lab-card">
+						<p class="eyebrow" data-i18n="lab.cards.orb.label">Shader Toy</p>
+						<h3 data-i18n="lab.cards.orb.title">Soft Plastic Orb</h3>
+						<p data-i18n="lab.cards.orb.body">
+							GLSL experiment using signed distance fields for velvet-like
+							light.
+						</p>
+					</div>
+					<div class="lab-card">
+						<p class="eyebrow" data-i18n="lab.cards.genie.label">Micro SaaS</p>
+						<h3 data-i18n="lab.cards.genie.title">Outline Genie</h3>
+						<p data-i18n="lab.cards.genie.body">
+							Auto-storyboarding plugin for Figma using structured prompts.
+						</p>
+					</div>
+					<div class="lab-card">
+						<p class="eyebrow" data-i18n="lab.cards.motion.label">Workshop</p>
+						<h3 data-i18n="lab.cards.motion.title">Accessible Motions</h3>
+						<p data-i18n="lab.cards.motion.body">
+							Guidelines + figma kit for building calm micro-interactions.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="section about">
+				<div class="about-image" aria-hidden="true"></div>
+				<div class="about-copy">
+					<p class="eyebrow" data-i18n="about.label">About</p>
+					<h2 data-i18n="about.heading">
+						I simplify interfaces and humanize systems.
+					</h2>
+					<p data-i18n="about.body">
+						I design interfaces that are intuitive, human-centered, and a little
+						bold. UX/UI Designer and Computer Engineer from Lima, passionate
+						about crafting products that balance creativity and usability.
+					</p>
+					<ul>
+						<li data-i18n="about.list.one">
+							8+ years blending UX, systems thinking, and clean front-end.
+						</li>
+						<li data-i18n="about.list.two">
+							Certified Design Sprint facilitator & accessibility advocate.
+						</li>
+						<li data-i18n="about.list.three">
+							Comfortable shipping in Figma, Webflow, React/Next.js.
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="contact" class="section contact">
+				<div>
+					<p class="eyebrow" data-i18n="contact.label">Contact</p>
+					<h2 data-i18n="contact.heading">
+						Let’s build something intentional.
+					</h2>
+				</div>
+				<div class="contact-actions">
+					<a
+						href="mailto:nata9532@icloud.com"
+						class="primary-btn"
+						data-i18n="contact.email">
+						nata9532@icloud.com
+					</a>
+					<div class="links">
+						<a
+							href="https://www.linkedin.com/in/natalia-rios-elias-283267221/"
+							aria-label="LinkedIn"
+							data-i18n="contact.linkedin"
+							>LinkedIn ↗</a
+						>
+						<a
+							href="https://dribbble.com/nattriose"
+							aria-label="Dribbble"
+							data-i18n="contact.dribbble"
+							>Dribbble ↗</a
+						>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<span>© <span id="year"></span> Natalia Rios.</span>
+			<span data-i18n="footer.tagline"
+				>Built with love, caffeine, and semantic HTML.</span
+			>
+		</footer>
+
+		<script src="scripts.js" defer></script>
+	</body>
 </html>
-
