@@ -207,7 +207,7 @@ const translations = {
 		contact: {
 			label: "Contacto",
 			heading: "Construyamos algo intencional.",
-			email: "hello@natiarios.design",
+			email: "nata9532@icloud.com",
 			linkedin: "LinkedIn ↗",
 			dribbble: "Dribbble ↗",
 			readcv: "Read.cv ↗",
