@@ -19,6 +19,7 @@ const translations = {
 		nav: { craft: "Craft", lab: "Lab", about: "About", contact: "Contact" },
 		header: { talk: "Let’s talk", cv: "Download CV" },
 		hero: {
+			
 			role: "Product Designer · UX/UI · Prototyping with code",
 			name: "Natalia Rios",
 			side: "I simplify, I humanize.",
