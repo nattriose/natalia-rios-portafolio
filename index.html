@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Natalia Rios — UX/UI + Front-end</title>
+		<title>Natalia Rios — Product Designer</title>
 		<meta
 			name="description"
-			content="Portfolio website for Natalia Rios, UX/UI designer and front-end developer." />
+			content="Portfolio website for Natalia Rios, product designer focused on strategy, UX/UI, and prototyping with code." />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -27,8 +27,6 @@
 					href="assets/Natalia-Rios-CV-EN.pdf"
 					download
 					data-i18n="header.cv"
-					href="#cv"
-					data-i18n="nav.contact"
 					>CV</a
 				>
 			</nav>
@@ -42,51 +40,21 @@
 					</button>
 				</div>
 			</div>
+			<div class="header-scroll-progress" aria-hidden="true"></div>
 		</header>
 
 		<main>
 			<section class="hero hero-spotlight">
 				<div class="hero-center">
 					<span class="hero-role" data-i18n="hero.role"
-						>Interface Designer · Front-end Dev</span
+						>Product Designer · UX/UI · Prototyping with code</span
 					>
-					<div class="hero-blob-shell" aria-hidden="true">
-						<svg class="blob-svg" viewBox="0 0 600 600" role="presentation">
-							<defs>
-								<radialGradient id="blobGradient" cx="42%" cy="28%" r="72%">
-									<stop offset="0%" stop-color="#ffffff" stop-opacity="0.98" />
-									<stop offset="40%" stop-color="#fafafa" stop-opacity="0.85" />
-									<stop offset="65%" stop-color="#e7e7e7" stop-opacity="0.7" />
-									<stop
-										offset="100%"
-										stop-color="#cfcfcf"
-										stop-opacity="0.92" />
-								</radialGradient>
-
-								<filter
-									id="blobGlass"
-									x="-20%"
-									y="-20%"
-									width="140%"
-									height="140%">
-									<feGaussianBlur
-										in="SourceGraphic"
-										stdDeviation="6"
-										result="blur" />
-									<feBlend in="SourceGraphic" in2="blur" mode="screen" />
-								</filter>
-							</defs>
-
-							<path
-								id="blob-path"
-								fill="url(#blobGradient)"
-								filter="url(#blobGlass)"></path>
-						</svg>
-
-						<div class="blob-highlight"></div>
+					<h1 id="hero-name" data-i18n="hero.name">Natalia Rios</h1>
+					<div class="hero-code-signature" aria-label="Design and code signature">
+						<span class="code-prefix">const craft = </span>
+						<span id="hero-code-line">"research + interface";</span>
+						<span class="code-caret" aria-hidden="true"></span>
 					</div>
-
-					<h1 data-i18n="hero.name">Natalia Rios</h1>
 				</div>
 			</section>
 
@@ -107,6 +75,27 @@
 						About me
 					</button>
 				</div>
+			</section>
+
+			<section class="value-strip section">
+				<article class="value-card reveal-up">
+					<p class="value-label" data-i18n="value.one.label">Product Thinking</p>
+					<p class="value-text" data-i18n="value.one.body">
+						I align user needs, business goals, and technical constraints from day one.
+					</p>
+				</article>
+				<article class="value-card reveal-up">
+					<p class="value-label" data-i18n="value.two.label">System Design</p>
+					<p class="value-text" data-i18n="value.two.body">
+						I build scalable UI foundations so teams ship faster without losing quality.
+					</p>
+				</article>
+				<article class="value-card reveal-up">
+					<p class="value-label" data-i18n="value.three.label">Code-Aware Delivery</p>
+					<p class="value-text" data-i18n="value.three.body">
+						I prototype interactions in code to validate ideas earlier and reduce handoff friction.
+					</p>
+				</article>
 			</section>
 
 			<section id="craft" class="section">
