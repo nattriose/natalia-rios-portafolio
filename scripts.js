@@ -19,13 +19,27 @@ const translations = {
 		nav: { craft: "Craft", lab: "Lab", about: "About", contact: "Contact" },
 		header: { talk: "Let’s talk", cv: "Download CV" },
 		hero: {
-			role: "Interface Designer · Front-end Dev",
+			role: "Product Designer · UX/UI · Prototyping with code",
 			name: "Natalia Rios",
 			side: "I simplify, I humanize.",
 			more: "More about me →",
-			lead: "I help purposeful teams ship delightful products that feel human, honest, and confident—spanning research, UX strategy, visual systems, and clean code.",
+			lead: "I help teams turn complexity into product clarity, from discovery and UX strategy to polished interfaces and code-informed prototypes.",
 			ctaPrimary: "See Work",
 			ctaSecondary: "About me",
+		},
+		value: {
+			one: {
+				label: "Product Thinking",
+				body: "I align user needs, business goals, and technical constraints from day one.",
+			},
+			two: {
+				label: "System Design",
+				body: "I build scalable UI foundations so teams ship faster without losing quality.",
+			},
+			three: {
+				label: "Code-Aware Delivery",
+				body: "I prototype interactions in code to validate ideas earlier and reduce handoff friction.",
+			},
 		},
 		craft: { label: "Craft" },
 		projects: {
@@ -122,13 +136,27 @@ const translations = {
 		},
 		header: { talk: "Hablemos", cv: "Descargar CV" },
 		hero: {
-			role: "Diseñadora UX/UI · Front-end Dev",
+			role: "Product Designer · UX/UI · Prototipado con código",
 			name: "Natalia Rios",
 			side: "Simplifico, humanizo.",
 			more: "Conoce más →",
-			lead: "Acompaño a equipos con propósito para lanzar productos cálidos, claros y confiables—desde research y estrategia UX hasta sistemas visuales y código limpio.",
+			lead: "Ayudo a equipos a convertir la complejidad en claridad de producto, desde discovery y estrategia UX hasta interfaces pulidas y prototipos guiados por código.",
 			ctaPrimary: "Ver trabajo",
 			ctaSecondary: "Sobre mí",
+		},
+		value: {
+			one: {
+				label: "Visión de Producto",
+				body: "Alineo necesidades de usuario, objetivos de negocio y límites técnicos desde el inicio.",
+			},
+			two: {
+				label: "Diseño de Sistemas",
+				body: "Construyo bases de UI escalables para que los equipos lancen más rápido sin perder calidad.",
+			},
+			three: {
+				label: "Entrega con Código",
+				body: "Prototipo interacciones en código para validar ideas antes y reducir fricción en handoff.",
+			},
 		},
 		craft: { label: "Proyectos" },
 		projects: {
@@ -223,6 +251,7 @@ const cvLinks = {
 	es: "assets/Natalia-Rios-CV-ES.pdf",
 };
 
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const langButtons = document.querySelectorAll(".lang-btn");
 let currentLanguage = "en";
 
@@ -247,6 +276,29 @@ const updateCvLink = (lang) => {
 	}
 };
 
+const typeHeroName = (lang) => {
+	const nameNode = document.getElementById("hero-name");
+	if (!nameNode) return;
+	const fullName = getTranslation(lang, "hero.name");
+	if (typeof fullName !== "string") return;
+
+	if (prefersReducedMotion) {
+		nameNode.textContent = fullName;
+		return;
+	}
+
+	nameNode.textContent = "";
+	let index = 0;
+	const type = () => {
+		nameNode.textContent = fullName.slice(0, index);
+		index += 1;
+		if (index <= fullName.length) {
+			window.setTimeout(type, 68);
+		}
+	};
+	type();
+};
+
 const setActiveLangButton = (lang) => {
 	langButtons.forEach((btn) => {
 		const isActive = btn.dataset.lang === lang;
@@ -262,6 +314,7 @@ const setLanguage = (lang) => {
 	updateTexts(lang);
 	updateCvLink(lang);
 	setActiveLangButton(lang);
+	typeHeroName(lang);
 };
 
 langButtons.forEach((btn) =>
@@ -270,53 +323,88 @@ langButtons.forEach((btn) =>
 
 setLanguage(currentLanguage);
 
-// Hero blob animation
-const blobPath = document.getElementById("blob-path");
-if (blobPath) {
-	const center = 300;
-	const baseRadius = 215;
-	const points = 48;
-	const variance = 52;
+const heroCodeLine = document.getElementById("hero-code-line");
+const heroCodeSnippets = [
+	'"research + interface";',
+	'buildProduct({ clarity, motion, trust });',
+	'prototype("before handoff");',
+];
 
-	const midpoint = (a, b) => ({
-		x: (a.x + b.x) / 2,
-		y: (a.y + b.y) / 2,
-	});
+if (heroCodeLine) {
+	if (prefersReducedMotion) {
+		heroCodeLine.textContent = heroCodeSnippets[0];
+	} else {
+		let snippetIndex = 0;
+		let charIndex = 0;
+		let deleting = false;
 
-	const buildPath = (time) => {
-		const coords = [];
-		for (let i = 0; i < points; i += 1) {
-			const angle = (Math.PI * 2 * i) / points;
-			const noise =
-				Math.sin(angle * 3.2 + time * 0.0016) * variance +
-				Math.cos(angle * 1.5 + time * 0.001) * (variance * 0.35) +
-				Math.sin(angle * 5.1 + time * 0.0024) * (variance * 0.25);
-			const pulse = Math.sin(time * 0.0005) * 6;
-			const radius = baseRadius + noise + pulse;
-			coords.push({
-				x: center + Math.cos(angle) * radius,
-				y: center + Math.sin(angle) * radius,
-			});
-		}
+		const typeCodeLine = () => {
+			const activeSnippet = heroCodeSnippets[snippetIndex];
+			if (!deleting) {
+				charIndex += 1;
+				heroCodeLine.textContent = activeSnippet.slice(0, charIndex);
+				if (charIndex >= activeSnippet.length) {
+					deleting = true;
+					window.setTimeout(typeCodeLine, 1250);
+					return;
+				}
+				window.setTimeout(typeCodeLine, 55);
+				return;
+			}
 
-		const start = midpoint(coords[0], coords[coords.length - 1]);
-		let d = `M ${start.x} ${start.y}`;
+			charIndex -= 1;
+			heroCodeLine.textContent = activeSnippet.slice(0, Math.max(0, charIndex));
+			if (charIndex <= 0) {
+				deleting = false;
+				snippetIndex = (snippetIndex + 1) % heroCodeSnippets.length;
+				window.setTimeout(typeCodeLine, 300);
+				return;
+			}
+			window.setTimeout(typeCodeLine, 32);
+		};
 
-		for (let i = 0; i < coords.length; i += 1) {
-			const current = coords[i];
-			const next = coords[(i + 1) % coords.length];
-			const mid = midpoint(current, next);
-			d += ` Q ${current.x} ${current.y} ${mid.x} ${mid.y}`;
-		}
-
-		d += " Z";
-		return d;
-	};
-
-	const animate = (time) => {
-		blobPath.setAttribute("d", buildPath(time));
-		requestAnimationFrame(animate);
-	};
-
-	requestAnimationFrame(animate);
+		typeCodeLine();
+	}
 }
+
+const revealTargets = document.querySelectorAll(
+	".value-card, .section-heading, .project-card, .about-image, .about-copy, .contact > div, .contact-actions"
+);
+revealTargets.forEach((node) => node.classList.add("reveal-up"));
+const revealItems = document.querySelectorAll(".reveal-up");
+
+if (revealItems.length && !prefersReducedMotion) {
+	const revealObserver = new IntersectionObserver(
+		(entries, observer) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add("is-visible");
+					observer.unobserve(entry.target);
+				}
+			});
+		},
+		{ threshold: 0.18 }
+	);
+
+	revealItems.forEach((item) => revealObserver.observe(item));
+} else {
+	revealItems.forEach((item) => item.classList.add("is-visible"));
+}
+
+const progressBar = document.querySelector(".header-scroll-progress");
+const siteHeader = document.querySelector(".site-header");
+const updateScrollProgress = () => {
+	const scrollTop = window.scrollY || document.documentElement.scrollTop;
+	const scrollHeight =
+		document.documentElement.scrollHeight - window.innerHeight;
+	const progress = scrollHeight > 0 ? scrollTop / scrollHeight : 0;
+	if (progressBar) {
+		progressBar.style.setProperty("--scroll-progress", String(progress));
+	}
+	if (siteHeader) {
+		siteHeader.classList.toggle("is-scrolled", scrollTop > 8);
+	}
+};
+
+updateScrollProgress();
+window.addEventListener("scroll", updateScrollProgress, { passive: true });
